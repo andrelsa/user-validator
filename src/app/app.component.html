@@ -1,26 +1,31 @@
-<form [formGroup]="form" (submit)="save()">
-  <p>User validators fields</p>
+<section id="cover">
+  <h1 class="display-4 text-center">User validators fields</h1>
+  <div id="cover-caption">
+    <div id="container" class="container">
+      <div class="row text-white">
+        <div class="col-sm-6 offset-sm-3 text-center">
+          <div class="info-form">
+            <form [formGroup]="form" (submit)="save()">
+              <!--Name-->
+              <div class="form-group">
+                <label class="sr-only">Name</label>
+                <input type="text" class="form-control" formControlName="name" placeholder="Name">
+              </div>
 
-  <input
-    style="width: 220px"
-    type="text"
-    formControlName="name"
-    placeholder="Search a free email"
-  >
-
-  <button [disabled]="form.invalid || form.pending">
-    Send
-    <span *ngIf="form.get('name').pending"> (searching)</span>
-  </button>
-
-  <p
-    style="color: red"
-    *ngIf="form.get('name').errors?.emailExists">This email is already in use.
-  </p>
-
-  <hr>
-
-  <p><a href="https://www.linkedin.com/in/andre-luis-soares-alves/" target="_blank">Visit my perfil on the Linkedin!</a>
-  </p>
-
-</form>
+              <!--Email-->
+              <div class="form-group">
+                <label class="sr-only">Email</label>
+                <input type="text" class="form-control" formControlName="email" placeholder="Search a free email">
+                <p *ngIf="form.get('email').errors?.emailExists"> This email is already in use. </p>
+              </div>
+              <button type="submit" class="btn btn-primary ">okay, go!</button>
+            </form>
+          </div>
+          <br>
+          <a href="https://www.linkedin.com/in/andre-luis-soares-alves/" target="_blank">Visit my perfil on the
+            Linkedin!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

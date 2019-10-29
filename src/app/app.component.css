@@ -1,0 +1,10 @@
+h1 {
+  font-size: 35px;
+  font-style: italic;
+  font-family: sans-serif;
+  margin-top: 10px;
+}
+
+p {
+  color: red;
+}

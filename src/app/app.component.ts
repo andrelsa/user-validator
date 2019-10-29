@@ -8,7 +8,6 @@ import {UserValidatorsService} from './core/services/validators/user-validators.
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'user-validator';
   form: FormGroup;
 
   constructor(
@@ -19,6 +18,14 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.form = this.fb.group({
       name: [
+        // initial value
+        null,
+        // sync built-in validators
+        Validators.compose(
+          [Validators.required, Validators.minLength(3)],
+        )
+      ],
+      email: [
         // initial value
         null,
         // sync built-in validators
