@@ -7,9 +7,17 @@ h1 {
   font-size: 35px;
   font-style: italic;
   font-family: sans-serif;
+  font-weight: bold;
   margin-top: 10px;
 }
 
 p {
   color: red;
+}
+
+a {
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #222;
 }

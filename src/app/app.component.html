@@ -15,7 +15,7 @@
               <!--Email-->
               <div class="form-group">
                 <label class="sr-only">Email</label>
-                <input type="text" class="form-control" formControlName="email" placeholder="Search a free email">
+                <input type="text" class="form-control" formControlName="email" placeholder="Email">
                 <p *ngIf="form.get('email').errors?.emailExists"> This email is already in use. </p>
               </div>
               <button type="submit" class="btn btn-primary ">okay, go!</button>
