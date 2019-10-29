@@ -1,4 +1,8 @@
-# UserValidator
+# Custom Async Validators in Angular
+
+We covered how to create custom validators for reactive forms in Angular. Sometimes however, you’ll want a validator that actually validates a value with a backend API. For this, Angular provides an easy way to define custom async validators
+
+## UserValidator
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
