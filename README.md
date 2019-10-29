@@ -6,5 +6,6 @@ Used as following technologies:
 - Angular 8
 - NodeJs version 10.16.0
 - Bootstrap 4
+- Backend: https://jsonplaceholder.typicode.com
 
 ![alt-text](https://github.com/andrelsa/user-validator/blob/master/src/app/shared/image/validation-async.gif)
