@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
         null,
         // sync built-in validators
         Validators.compose(
-          [Validators.required, Validators.minLength(3)],
+          [Validators.required, Validators.minLength(3), Validators.maxLength(100)],
         )
       ],
       email: [
@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         null,
         // sync built-in validators
         Validators.compose(
-          [Validators.required, Validators.minLength(3)],
+          [Validators.required, Validators.minLength(3), Validators.maxLength(100), Validators.email],
         ),
         // custom async validator
         this.service.userValidator()
